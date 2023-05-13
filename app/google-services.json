@@ -1,0 +1,251 @@
+{
+  "project_info": {
+    "project_number": "834734482971",
+    "firebase_url": "https://applibrary-94f52-default-rtdb.firebaseio.com",
+    "project_id": "applibrary-94f52",
+    "storage_bucket": "applibrary-94f52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834734482971:android:9f6cd82920b8034d5cbabe",
+        "android_client_info": {
+          "package_name": "com.digipod.clini"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834734482971-od91nu575vhhp0sq3cp6q8v7gp20a8ne.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digipod.clini",
+            "certificate_hash": "e05dcb67ed7a8b8c18a51a052abee8c241a97db5"
+          }
+        },
+        {
+          "client_id": "834734482971-8ggkt4cfkho0fg274nugc02bas1mhsp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_oiohBHBwEuh4WIbDroLzCAzKhC2HX3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834734482971-8ggkt4cfkho0fg274nugc02bas1mhsp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834734482971:android:8018e1ef0fbf3e755cbabe",
+        "android_client_info": {
+          "package_name": "com.digipod.clininet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834734482971-8ggkt4cfkho0fg274nugc02bas1mhsp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_oiohBHBwEuh4WIbDroLzCAzKhC2HX3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834734482971-8ggkt4cfkho0fg274nugc02bas1mhsp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834734482971:android:6e79439dc0e9bc015cbabe",
+        "android_client_info": {
+          "package_name": "com.digipod.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834734482971-8ggkt4cfkho0fg274nugc02bas1mhsp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_oiohBHBwEuh4WIbDroLzCAzKhC2HX3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834734482971-8ggkt4cfkho0fg274nugc02bas1mhsp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834734482971:android:ceb4a9954558bd5a5cbabe",
+        "android_client_info": {
+          "package_name": "com.digipod.fireapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834734482971-8ggkt4cfkho0fg274nugc02bas1mhsp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_oiohBHBwEuh4WIbDroLzCAzKhC2HX3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834734482971-8ggkt4cfkho0fg274nugc02bas1mhsp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834734482971:android:9e457d6be60bbe6b5cbabe",
+        "android_client_info": {
+          "package_name": "com.digipod.intent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834734482971-8ggkt4cfkho0fg274nugc02bas1mhsp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_oiohBHBwEuh4WIbDroLzCAzKhC2HX3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834734482971-8ggkt4cfkho0fg274nugc02bas1mhsp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834734482971:android:00400fbb268eea6d5cbabe",
+        "android_client_info": {
+          "package_name": "com.digipod.quizapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834734482971-8ggkt4cfkho0fg274nugc02bas1mhsp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_oiohBHBwEuh4WIbDroLzCAzKhC2HX3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834734482971-8ggkt4cfkho0fg274nugc02bas1mhsp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834734482971:android:28f7b0abc06e99195cbabe",
+        "android_client_info": {
+          "package_name": "com.digipod.splash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834734482971-8ggkt4cfkho0fg274nugc02bas1mhsp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_oiohBHBwEuh4WIbDroLzCAzKhC2HX3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834734482971-8ggkt4cfkho0fg274nugc02bas1mhsp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834734482971:android:03e42a08700949315cbabe",
+        "android_client_info": {
+          "package_name": "com.digipod.trivia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834734482971-8ggkt4cfkho0fg274nugc02bas1mhsp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_oiohBHBwEuh4WIbDroLzCAzKhC2HX3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834734482971-8ggkt4cfkho0fg274nugc02bas1mhsp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
