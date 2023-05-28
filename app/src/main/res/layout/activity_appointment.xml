@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".AppointmentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageButton
+                android:id="@+id/btnBackConsultNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto"
+                android:text="Back"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="What is your Concern?"
+            android:textColor="@color/black"
+
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etSearchForSymptomsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/search_bg"
+            android:drawableStart="@drawable/ic_search"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="7dp"
+            android:hint="Search for symptoms e.g. fever"
+            android:padding="10dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:text="Most Searched Specialists"
+                        android:textColor="#7B1FA2"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1.5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="#9C27B0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="3">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdGenPhy"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp">
+
+                                <ImageView
+                                    android:id="@+id/ivGenPhy"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/gp" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvGenPhy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdGenPhy"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="General \nPhysician"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdSkin"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp">
+
+                                <ImageView
+                                    android:id="@+id/ivSkin"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/skin"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvSpecialistName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdSkin"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="Skin &amp;\nHair"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdWomenHealth"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp">
+
+                                <ImageView
+                                    android:id="@+id/ivWomenHealth"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/wh"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvWomenHealth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdWomenHealth"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:text="Women's \nHealth"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="3">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdBones"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp">
+
+                                <ImageView
+                                    android:id="@+id/ivBones"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/bones" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvBones"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdBones"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="Bones &amp; \nJoints"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdChild"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp">
+
+                                <ImageView
+                                    android:id="@+id/ivChild"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/child" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvChild"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdChild"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="Child \nSpecialist"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdMore"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp">
+
+                                <ImageView
+                                    android:id="@+id/ivMore"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_plus" />
+
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:id="@+id/tvView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdMore"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="View \nMore"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Common Symptoms"
+                        android:textColor="#7B1FA2"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1.5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="#7B1FA2" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="3">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdFever"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp">
+
+                                <ImageView
+                                    android:id="@+id/ivFever"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/sym_fever" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvFever"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdFever"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="Fever"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdCough"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp">
+
+                                <ImageView
+                                    android:id="@+id/ivCough"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/sym_cough" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvCough"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdCough"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="Cough"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdStomach"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp">
+
+                                <ImageView
+                                    android:id="@+id/ivStomach"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/sym_stomach"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvStomach"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdStomach"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:text="Stomachache"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="3">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdHead"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp">
+
+                                <ImageView
+                                    android:id="@+id/ivHead"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/sym_headache" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvHead"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdHead"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="Headache"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdWeight"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp">
+
+                                <ImageView
+                                    android:id="@+id/ivWeight"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/sym_weightloss" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvWeight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdWeight"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="Weightloss"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdViMore"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp"
+                                android:layout_gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/ivViMore"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_plus" />
+
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:id="@+id/tvViMore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdViMore"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="View More"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Surgery Related Issues"
+                        android:textColor="#7B1FA2"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1.5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="#7B1FA2" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="3">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdAppen"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp">
+
+                                <ImageView
+                                    android:id="@+id/ivAppen"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/sur_appendicitis" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvAppen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdAppen"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="Appendicitis"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdStones"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp">
+
+                                <ImageView
+                                    android:id="@+id/ivStones"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/sur_kidney"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvStones"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdStones"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="Kidney Stones"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdPiles"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp">
+
+                                <ImageView
+                                    android:id="@+id/ivPiles"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/sur_piles"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvPiles"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdPiles"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:text="Hemorrhoid"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="3">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdGall"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp">
+
+                                <ImageView
+                                    android:id="@+id/ivGall"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/sur_gall" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvGall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdGall"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="Gall \nStones"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdVein"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp">
+
+                                <ImageView
+                                    android:id="@+id/ivVein"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/sur_vericose" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/tvVein"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdVein"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="Vericose \nVein"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdVMore"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="center"
+
+                                android:backgroundTint="@color/purple_200"
+                                app:cardCornerRadius="100dp">
+
+                                <ImageView
+                                    android:id="@+id/ivVMore"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_plus" />
+
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:id="@+id/tvVMore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cdVMore"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="View \nMore"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </ScrollView>
+    </LinearLayout>
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnChooseDoctor"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:backgroundTint="#F4511E"-->
+    <!--        android:paddingVertical="25dp"-->
+    <!--        android:text="Choose Doctor"-->
+    <!--        android:visibility="invisible"-->
+    <!--        android:paddingHorizontal="60dp"-->
+    <!--        android:textColor="#FDFDFD" />-->
+</RelativeLayout>

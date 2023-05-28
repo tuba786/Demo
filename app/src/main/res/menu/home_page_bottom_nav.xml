@@ -5,5 +5,13 @@
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_explore"
         android:title="Home" />
+    <item
+        android:id="@+id/nav_symptom"
+        android:title="Symptom Checker"
+        />
+    <item
+        android:id="@+id/nav_reminder"
+        android:title="Reminder"
+        android:icon="@drawable/alarm"/>
 
 </menu>

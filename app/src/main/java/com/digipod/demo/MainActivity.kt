@@ -3,7 +3,9 @@ package com.digipod.demo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.digipod.demo.Fragments.FragmentHome
+import com.digipod.demo.fragments.FragmentHome
+import com.digipod.demo.fragments.FragmentReminder
+import com.digipod.demo.fragments.FragmentSymptomChecker
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         bottomNavBar.setOnNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.nav_home -> setCurrentFragment(FragmentHome())
+                R.id.nav_symptom -> setCurrentFragment(FragmentSymptomChecker())
+                R.id.nav_reminder -> setCurrentFragment(FragmentReminder())
             }
             true
         }

@@ -6,5 +6,15 @@
     <string name="agora_token">007eJxTYMiQ2BL3eounofiNtAk8/TNXbP1YUK/8reTiyq8u8UXzr7soMBimmJhaGiaaWJoCWWmJpolmlibJJkmJSWYmJsYGpql6KVEpDYGMDJPvNzAyMkAgiM/OkJKfXJJfZMjAAADvziFG</string>
 
     <string name="pk">pk_test_51KuagNSHSR0QAHQZWocM4lGu7ufWGhCB4HRUQJrbB1tk5IJOevnK6x3oLaBAsPoGhYpHqF0uQfbU1g2PKGcyokOo003HNgG17D</string>
-    <string name="api_url">http://192.168.18.218:8000/checkout</string>
+    <string name="api_url">http://192.168.18.239:8000/checkout</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="dose_hint">1</string>
+    <string name="name_hint">Paracetamol</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="medication_reminder">Medication Reminder</string>
+    <string name="channel_description">Its time to take your meds</string>
+    <string name="channel_name">reminder</string>
+    <string name="stop">Stop</string>
 </resources>

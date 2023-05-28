@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#ff654d</color>
     <color name="transparent">#00000000</color>
+    <color name="uw">#FF9800</color>
+    <color name="nor">#15D8C5</color>
+    <color name="over">#F44336</color>
 </resources>

@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-android-extensions'
     id 'com.google.gms.google-services'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -37,6 +38,7 @@ android {
     // enable view binding (optional you can use find view by id)
     buildFeatures{
         viewBinding true
+        dataBinding true
     }
 }
 
@@ -56,15 +58,13 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
 
     // Import the Firebase BoM
 
     implementation platform('com.google.firebase:firebase-bom:28.4.0')
 
-
-    // Add the dependency for the Firebase SDK for Google Analytics
-
-    // When using the BoM, don't specify versions in Firebase dependencies
 
     implementation 'com.google.firebase:firebase-analytics-ktx'
 
@@ -78,7 +78,7 @@ dependencies {
     // Retrofit dependency which will be used to make network calls
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     // GSON library which is used to convert POJO to JSON and vice versa
-    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     // okhttp library used to observe the api call logs on LogCat
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
 
@@ -93,4 +93,10 @@ dependencies {
     implementation 'com.stripe:stripe-android:20.21.1'
     implementation 'com.github.kittinunf.fuel:fuel:2.3.1'
     implementation 'com.github.kittinunf.fuel:fuel-json:2.3.1'
+    // Moshi
+    implementation 'com.squareup.moshi:moshi-kotlin:1.13.0'
+    implementation"androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1"
+    // Retrofit with Moshi Converter
+    implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
+
 }
