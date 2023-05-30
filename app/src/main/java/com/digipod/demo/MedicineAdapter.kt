@@ -5,6 +5,7 @@ import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -18,8 +19,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
-class MedicineAdapter(
-    private val onItemClickListener: OnItemClickListener,
+class MedicineAdapter( private val onItemClickListener: OnItemClickListener,
     private val medicineList: ArrayList<MedicineModel>
 ) : RecyclerView.Adapter<MedicineAdapter.MedicineViewHolder>() {
 
@@ -46,9 +46,10 @@ class MedicineAdapter(
         private val medicineImageView: ImageView = itemView.findViewById(R.id.medicineImageView)
         private val medicineName: TextView = itemView.findViewById(R.id.medicineName)
         private val medicinePrice: TextView = itemView.findViewById(R.id.medicinePrice)
+        private val medicineManufacturer: TextView = itemView.findViewById(R.id.medicineManufacturer)
         private val qty: TextView = itemView.findViewById(R.id.quantityTextView)
-        private val inc: TextView = itemView.findViewById(R.id.incrementButton)
-        private val dec: TextView = itemView.findViewById(R.id.decrementButton)
+        private val inc: ImageButton = itemView.findViewById(R.id.incrementButton)
+        private val dec: ImageButton = itemView.findViewById(R.id.decrementButton)
         private val cartBtn: TextView = itemView.findViewById(R.id.addToCartButton)
 
 
@@ -61,6 +62,7 @@ class MedicineAdapter(
                 .into(medicineImageView)
             medicineName.text = medicine.name
             medicinePrice.text = medicine.price
+            medicineManufacturer.text = medicine.manufacturer
             cartBtn.setOnClickListener {
                 val medPrice = medicine.price.toInt() * 1
                 val cart = MedicineCartModel(

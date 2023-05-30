@@ -8,134 +8,92 @@ import android.text.method.PasswordTransformationMethod
 
 import android.text.method.HideReturnsTransformationMethod
 import android.view.WindowManager
-import android.widget.Toast
+import android.widget.*
 import com.digipod.demo.Model.User
+import com.digipod.demo.fragments.FragmentHome
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.firestore.FirebaseFirestore
 
 
 class CreateAccount : AppCompatActivity() {
 
-    private lateinit var databaseReference: DatabaseReference
+    private lateinit var etName: EditText
+    private lateinit var etAge: EditText
+    private lateinit var etEmail: EditText
+    private lateinit var radioGroupGender: RadioGroup
+    private lateinit var radioButtonMale: RadioButton
+    private lateinit var radioButtonFemale: RadioButton
+    private lateinit var radioButtonOthers: RadioButton
 
-    private var sex:String = ""
+    private lateinit var btnCreateAccount: Button
 
-
+    private lateinit var firestore: FirebaseFirestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_account)
 
-        window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN)
-        Toast.makeText(applicationContext,intent?.getStringExtra("phone").toString(),Toast.LENGTH_SHORT).show()
+        // Initialize Firestore
+        firestore = FirebaseFirestore.getInstance()
 
+        // Initialize views
+        etName = findViewById(R.id.etNameCreateAccount)
+        etAge = findViewById(R.id.etAge)
+        etEmail = findViewById(R.id.etEmailCreateAccount)
+        // Inside onCreate() method, after initializing other views
+        radioGroupGender = findViewById(R.id.radioGroupSelectGender)
+        radioButtonMale = findViewById(R.id.rbMale)
+        radioButtonFemale = findViewById(R.id.rbFemale)
+        radioButtonOthers = findViewById(R.id.rbOthers)
 
-//        fun onRadioButtonClicked(view: View) {
-//            if (view is RadioButton) {
-//                // Is the button now checked?
-//                val checked = view.isChecked
-//
-//                // Check which radio button was clicked
-//                when (view.getId()) {
-//                    R.id.rbMale ->
-//                        if (checked) {
-//                            // Male Selected
-//                            sex="Male"
-//                        }
-//                    R.id.rbFemale ->
-//                        if (checked) {
-//                            // Female Selected
-//                            sex="Female"
-//                        }
-//                    R.id.rbOthers ->
-//                        if(checked) {
-//                            // Others Selected
-//                            sex="Others"
-//                        }
-//                }
-//            }
-//
-//        }
-//
-//    onRadioButtonClicked(view)
+        btnCreateAccount = findViewById(R.id.btnCreate)
 
-
-        rbMale.setOnClickListener(){
-            sex="Male"
+        // Handle create account button click
+        btnCreateAccount.setOnClickListener {
+            createAccount()
         }
-        rbFemale.setOnClickListener(){
-            sex="FeMale"
-        }
-        rbOthers.setOnClickListener(){
-            sex="Others"
+    }
+
+    private fun createAccount() {
+        val name = etName.text.toString()
+        val age = etAge.text.toString()
+        val email = etEmail.text.toString()
+        val gender = when (radioGroupGender.checkedRadioButtonId) {
+            R.id.rbMale -> "Male"
+            R.id.rbFemale -> "Female"
+            R.id.rbOthers -> "Others"
+            else -> "Select a radio button"// Handle the default case if no radio button is selected
         }
 
+        // Validate user input (add your own validation logic as per your requirements)
 
+        // Create a user data object
+        val userData = hashMapOf(
+            "name" to name,
+            "age" to age,
+            "email" to email,
+            "gender" to gender
+        )
 
+        // Store user data in Firestore
+        firestore.collection("users")
+            .add(userData)
+            .addOnSuccessListener {
+                    documentReference ->
+                val userId = documentReference.id
 
-//        tvHospitalCode.setOnClickListener {
-//
-//            val manager = fragmentManager
-//            val transaction: android.app.FragmentTransaction? = manager.beginTransaction()
-//            val hospitalCode:HospitalCode = HospitalCode()
-//            transaction?.replace(R.id.fragmentHospitalCode, hospitalCode, "hospitalcode")
-//        }
+                // Start the other activity and pass the name as an extra
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                // Inside createAccount() method after startActivity(intent)
 
-        databaseReference=FirebaseDatabase.getInstance().reference
-
-
-
-        btnCreate.setOnClickListener {
-            //val bundle = Bundle()
-
-
-            var name:String=etNameCreateAccount.text.toString()
-            var password:String=etSetPasswordCreateAccount.text.toString()
-            var email:String=etEmailCreateAccount.text.toString()
-          var phone: String? =intent?.getStringExtra("phone")
-
-            var sexType:String=sex.toString()
-            var user= User(name,password,phone,email,sexType)
-
-           //var user= phone?.let { it1 -> User(name,password, it1,email) }
-          //  databaseReference.child("Users").child().push().setValue(user)
-//            databaseReference.child("Users").push().child(name).child("name").setValue(user.name)
-//            databaseReference.child("Users").push().child(name).child("name").setValue(user.name)
-            databaseReference.child("Users").push().child(name).setValue(user)
-
-
-
-//            databaseReference.child("Users").push().child(name).child("name").setValue(name)
-//            databaseReference.child("Users").push().child(name).child("phoneNo").setValue(phone)
-//            databaseReference.child("Users").push().child(name).child("email").setValue(email)
-//            databaseReference.child("Users").push().child(name).child("password").setValue(password)
-//            databaseReference.child("Users").push().child(name).child("sex").setValue(sexType)
-
-
-            val intent = Intent(baseContext, MainActivity::class.java)
-            startActivity(intent)
-        }
-
-
-
-        etSetPasswordCreateAccount.transformationMethod = PasswordTransformationMethod.getInstance()
-        btnShowHide.setOnClickListener {
-            if (etSetPasswordCreateAccount.transformationMethod == PasswordTransformationMethod.getInstance()) {
-                etSetPasswordCreateAccount.transformationMethod = HideReturnsTransformationMethod.getInstance()
-                btnShowHide.setBackgroundResource(R.drawable.password_show)
-
-                //placing cursor at the end of the text
-                etSetPasswordCreateAccount.setSelection(etSetPasswordCreateAccount.text.toString().length)
-            } else {
-                etSetPasswordCreateAccount.transformationMethod = PasswordTransformationMethod.getInstance()
-                btnShowHide.setBackgroundResource(R.drawable.password_hide)
-
-                //placing cursor at the end of the text
-                etSetPasswordCreateAccount.setSelection(etSetPasswordCreateAccount.text.toString().length)
             }
-
-        }
-
+            .addOnFailureListener { e ->
+                // Failed to store user data in Firestore
+                // Handle the error appropriately
+                Toast.makeText(this, "Failed to create account", Toast.LENGTH_SHORT).show()
+            }
     }
 }
 

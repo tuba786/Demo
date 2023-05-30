@@ -58,7 +58,77 @@ class DoctorListActivity : AppCompatActivity() {
                         "English",
                         "7 years experience",
 
-                        )
+                        ),
+                            DocModel(
+                            R.drawable.dr10,
+                    "Lucknow",
+                    "Dr. Atul Rastogi",
+                    "MBBS,DNB(General Medicine)",
+                    "General Physician",
+                    "English",
+                    "10 years experience",
+
+                    ),
+                DocModel(
+                    R.drawable.dr3,
+                    "Lucknow",
+                    "Ashish Kumar",
+                    "MBBS,DNB(General Medicine)",
+                    "General Physician",
+                    "English",
+                    "7 years experience",
+
+                    ),
+                DocModel(
+                    R.drawable.dr11,
+                    "Lucknow",
+                    "P.K. Rastogi",
+                    "MBBS,DNB(General Medicine)",
+                    "General Physician",
+                    "English",
+                    "7 years experience",
+
+                    ),
+                DocModel(
+                    R.drawable.dr9,
+                    "Lucknow",
+                    "Ravinder K Garg",
+                    "MBBS,DNB(General Medicine)",
+                    "General Physician",
+                    "English",
+                    "18 years experience",
+
+                    ),
+                DocModel(
+                    R.drawable.dr6,
+                    "Lucknow",
+                    "Dr. Lalita Porwal",
+                    "MBBS,DNB(General Medicine)",
+                    "General Physician",
+                    "English",
+                    "5 years experience",
+
+                    ),
+                DocModel(
+                    R.drawable.dr7,
+                    "Lucknow",
+                    "Llyod Dcosta",
+                    "MBBS,DNB(General Medicine)",
+                    "General Physician",
+                    "English",
+                    "7 years experience",
+
+                    ),
+                DocModel(
+                    R.drawable.dr13,
+                    "Lucknow",
+                    "Dr Nupur Agarwal",
+                    "MBBS,DNB(General Medicine)",
+                    "General Physician",
+                    "English",
+                    "11 years experience",
+
+                    )
                 )
             }
             "Skin and Hair" -> {
@@ -81,6 +151,36 @@ class DoctorListActivity : AppCompatActivity() {
                         "Dermatologist",
                         "English",
                         "10 years experience",
+
+                        ),
+                    DocModel(
+                        R.drawable.dr11,
+                        "Lucknow",
+                        "Swati Sharma",
+                        "MBBS,DNB(General Medicine)",
+                        "Dermatologist",
+                        "English",
+                        "11 years experience",
+
+                        ),
+                    DocModel(
+                        R.drawable.dr10,
+                        "Lucknow",
+                        "Noor Sidiqqui",
+                        "MBBS,DNB(General Medicine)",
+                        "Dermatologist",
+                        "English",
+                        "5 years experience",
+
+                        ),
+                    DocModel(
+                        R.drawable.dr6,
+                        "Lucknow",
+                        "Khushi Kapadia",
+                        "MBBS,DNB(General Medicine)",
+                        "Dermatologist",
+                        "English",
+                        "8 years experience",
 
                         )
                 )
@@ -105,6 +205,36 @@ class DoctorListActivity : AppCompatActivity() {
                         "Gynecologist ",
                         "English",
                         "4 years experience",
+
+                        ),
+                    DocModel(
+                        R.drawable.dr6,
+                        "Lucknow",
+                        "Sucheta Prabhakar",
+                        "MBBS",
+                        "Gynecologist ",
+                        "English",
+                        "8 years experience",
+
+                        ),
+                    DocModel(
+                        R.drawable.dr11,
+                        "Lucknow",
+                        "Abhilasha Saxena",
+                        "MBBS",
+                        "Gynecologist ",
+                        "English",
+                        "7 years experience",
+
+                        ),
+                    DocModel(
+                        R.drawable.dr10,
+                        "Lucknow",
+                        "Ruplekha Balan",
+                        "MBBS",
+                        "Gynecologist ",
+                        "English",
+                        "10 years experience",
 
                         )
 

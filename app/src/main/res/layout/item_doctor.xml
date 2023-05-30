@@ -150,7 +150,7 @@
             android:layout_marginRight="10dp"
             android:backgroundTint="#673AB7"
             android:fontFamily="@font/roboto"
-            android:text="Consult Now"
+            android:text="Book \nAppointment"
             android:textAllCaps="false"
             android:textColor="@color/white" />
     </RelativeLayout>

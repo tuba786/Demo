@@ -43,6 +43,10 @@ class DoctorAdapter : RecyclerView.Adapter<DoctorAdapter.DoctorViewHolder>() {
         private val categoryTextView: TextView = itemView.findViewById(R.id.tvSpecialization)
         private val doctorImageView: ImageView=itemView.findViewById(R.id.ivDoctorImage)
         private val slotButton: Button =itemView.findViewById(R.id.btnBook)
+        private val placeView: TextView = itemView.findViewById(R.id.tvLocation)
+        private val expView: TextView  = itemView.findViewById(R.id.tvExperience)
+        private val levelView: TextView = itemView.findViewById(R.id.tvPost)
+        private val langView: TextView  = itemView.findViewById(R.id.tvLanguage)
 
 
         fun bind(doctor: DoctorModel) {
@@ -51,6 +55,10 @@ class DoctorAdapter : RecyclerView.Adapter<DoctorAdapter.DoctorViewHolder>() {
                 .into(doctorImageView)
             doctorNameTextView.text = doctor.doctorName
             categoryTextView.text = doctor.specialization
+            placeView.text = doctor.location
+            expView.text = doctor.experience
+            levelView.text = doctor.post
+            langView.text = doctor.language
             slotButton.setOnClickListener {
                 showSlotSelectionDialog(it,doctor)
             }
@@ -76,6 +84,86 @@ class DoctorAdapter : RecyclerView.Adapter<DoctorAdapter.DoctorViewHolder>() {
             dialog.dismiss()
             val i = Intent(view.context, CheckoutActivity::class.java)
             val slot = tvChoice1.text.toString()
+            i.putExtra("slot", slot)
+            i.putExtra("amount", doctor.fees)
+            view.context.startActivity(i)
+        }
+        tvChoice10.setOnClickListener {view->
+            dialog.dismiss()
+            val i = Intent(view.context, CheckoutActivity::class.java)
+            val slot = tvChoice10.text.toString()
+            i.putExtra("slot", slot)
+            i.putExtra("amount", doctor.fees)
+            view.context.startActivity(i)
+        }
+        tvChoice11.setOnClickListener {view->
+            dialog.dismiss()
+            val i = Intent(view.context, CheckoutActivity::class.java)
+            val slot = tvChoice11.text.toString()
+            i.putExtra("slot", slot)
+            i.putExtra("amount", doctor.fees)
+            view.context.startActivity(i)
+        }
+        tvChoice2.setOnClickListener {view->
+            dialog.dismiss()
+            val i = Intent(view.context, CheckoutActivity::class.java)
+            val slot = tvChoice2.text.toString()
+            i.putExtra("slot", slot)
+            i.putExtra("amount", doctor.fees)
+            view.context.startActivity(i)
+        }
+        tvChoice3.setOnClickListener {view->
+            dialog.dismiss()
+            val i = Intent(view.context, CheckoutActivity::class.java)
+            val slot = tvChoice3.text.toString()
+            i.putExtra("slot", slot)
+            i.putExtra("amount", doctor.fees)
+            view.context.startActivity(i)
+        }
+        tvChoice4.setOnClickListener {view->
+            dialog.dismiss()
+            val i = Intent(view.context, CheckoutActivity::class.java)
+            val slot = tvChoice4.text.toString()
+            i.putExtra("slot", slot)
+            i.putExtra("amount", doctor.fees)
+            view.context.startActivity(i)
+        }
+        tvChoice5.setOnClickListener {view->
+            dialog.dismiss()
+            val i = Intent(view.context, CheckoutActivity::class.java)
+            val slot = tvChoice5.text.toString()
+            i.putExtra("slot", slot)
+            i.putExtra("amount", doctor.fees)
+            view.context.startActivity(i)
+        }
+        tvChoice6.setOnClickListener {view->
+            dialog.dismiss()
+            val i = Intent(view.context, CheckoutActivity::class.java)
+            val slot = tvChoice6.text.toString()
+            i.putExtra("slot", slot)
+            i.putExtra("amount", doctor.fees)
+            view.context.startActivity(i)
+        }
+        tvChoice7.setOnClickListener {view->
+            dialog.dismiss()
+            val i = Intent(view.context, CheckoutActivity::class.java)
+            val slot = tvChoice7.text.toString()
+            i.putExtra("slot", slot)
+            i.putExtra("amount", doctor.fees)
+            view.context.startActivity(i)
+        }
+        tvChoice8.setOnClickListener {view->
+            dialog.dismiss()
+            val i = Intent(view.context, CheckoutActivity::class.java)
+            val slot = tvChoice8.text.toString()
+            i.putExtra("slot", slot)
+            i.putExtra("amount", doctor.fees)
+            view.context.startActivity(i)
+        }
+        tvChoice9.setOnClickListener {view->
+            dialog.dismiss()
+            val i = Intent(view.context, CheckoutActivity::class.java)
+            val slot = tvChoice9.text.toString()
             i.putExtra("slot", slot)
             i.putExtra("amount", doctor.fees)
             view.context.startActivity(i)

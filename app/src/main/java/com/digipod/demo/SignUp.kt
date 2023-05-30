@@ -286,36 +286,35 @@ class SignUp : AppCompatActivity() {
 
         if (credential != null) {
             firebaseAuth.signInWithCredential(credential)
-                .addOnSuccessListener {
-                    //lgoin sucess
-                    progressDialog.dismiss()
-                    // Toast.makeText(this,"$(e.message)",Toast.LENGTH_SHORT).show()
-                    val phone = firebaseAuth.currentUser?.phoneNumber
-                    Toast.makeText(this, "Loggin in as $phone", Toast.LENGTH_SHORT).show()
+                .addOnSuccessListener { authResult ->
+                    // Check if the user is signing in for the first time
+                    val isNewUser = authResult.additionalUserInfo?.isNewUser
 
-                    //sending phone number to next page
-//                    val bundle=Bundle();
-//                    bundle.putString("phone",phone)
+                    if (isNewUser == true) {
+                        // User is signing in for the first time, navigate to CreateAccount activity
+                        progressDialog.dismiss()
+                        val phone = firebaseAuth.currentUser?.phoneNumber
+                        Toast.makeText(this, "Logging in as $phone", Toast.LENGTH_SHORT).show()
 
-                    if(etOtp.text.toString().length==6) {
-                        // start profile actiivity
-                        val intent = Intent(baseContext, CreateAccount::class.java)
-                        intent.putExtra("phone",phone)
+                        val intent = Intent(this, CreateAccount::class.java)
+                        intent.putExtra("phone", phone)
+                        startActivity(intent)
+                    } else {
+                        // User is not signing in for the first time, navigate to MainActivity
+                        progressDialog.dismiss()
+                        val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
                     }
-
-
                 }
                 .addOnFailureListener { e ->
-                    //login failed
+                    // Login failed
                     progressDialog.dismiss()
-//                    to print exception e
-//                    Toast.makeText(this, "${(e.message)}", Toast.LENGTH_SHORT).show()
                     Toast.makeText(this, "Enter valid OTP", Toast.LENGTH_SHORT).show()
-
                 }
         }
-    }private val runnable = Runnable {
+    }
+
+    private val runnable = Runnable {
         viewPager2.currentItem = viewPager2.currentItem + 1
     }
 

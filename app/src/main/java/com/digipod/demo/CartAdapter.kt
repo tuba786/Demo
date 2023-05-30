@@ -17,6 +17,8 @@ class CartAdapter(
         private val medicineImageView: ImageView = itemView.findViewById(R.id.medicineImageView)
         private val medicineName: TextView = itemView.findViewById(R.id.medicineName)
         private val medicinePrice: TextView = itemView.findViewById(R.id.medicinePrice)
+        private val medicineQuantity: TextView = itemView.findViewById(R.id.medicineQty)
+
 
         fun bind(item: MedicineCartModel) {
             // Bind the medicine data to the views
@@ -24,6 +26,7 @@ class CartAdapter(
                 .load(item.medicineItem.medicine.image)
                 .into(medicineImageView)
             medicineName.text = item.medicineItem.medicine.name
+            medicineQuantity.text = item.medicineItem.qty.toString()
             medicinePrice.text = item.medicineItem.price.toString()
         }
     }

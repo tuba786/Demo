@@ -13,11 +13,29 @@ class AppointmentActivity : AppCompatActivity() {
         cdGenPhy.setOnClickListener {
             startDoctorActivity("General Physician")
         }
+        cdCough.setOnClickListener {
+            startDoctorActivity("General Physician")
+        }
         cdSkin.setOnClickListener {
             startDoctorActivity("Skin and Hair")
         }
         cdWomenHealth.setOnClickListener {
             startDoctorActivity("Women's Health")
+        }
+        cdCough.setOnClickListener {
+            startDoctorActivity("General Physician")
+        }
+        cdFever.setOnClickListener {
+            startDoctorActivity("General Physician")
+        }
+        cdStomach.setOnClickListener {
+            startDoctorActivity("General Physician")
+        }
+        cdHead.setOnClickListener {
+            startDoctorActivity("General Physician")
+        }
+        cdWeight.setOnClickListener {
+            startDoctorActivity("General Physician")
         }
 
     }

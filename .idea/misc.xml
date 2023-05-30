@@ -15,11 +15,12 @@
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/drawable-v24/splash_bg.xml" value="0.133" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/drawable/back_arrow.xml" value="0.1225" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/drawable/bg.xml" value="0.1" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/drawable/ic_minus.xml" value="0.1335" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/drawable/ic_plus.xml" value="0.1225" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/font/roboto.xml" value="0.21944444444444444" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_appointment.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_cart.xml" value="0.20521590423257802" />
-        <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_checkout.xml" value="0.25" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_checkout.xml" value="0.1" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_create_account.xml" value="0.1" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_diet_recommendation.xml" value="0.1" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_diet_rrcommendation.xml" value="0.20521590423257802" />
@@ -27,12 +28,18 @@
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_doctor_list.xml" value="0.1936725096194955" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_hospital.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_instant_consultation.xml" value="0.25" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_insurance.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_insurance_cart.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_lab_cart.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_lab_test.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_medicine.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_medicine.xml" value="0.264" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_payment.xml" value="0.2359375" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_pharmacy.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_self_check.xml" value="0.1" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_splash.xml" value="0.11895910780669144" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_upload.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/add_reminder_dialog.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/content_main.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/dialog_slot_selection.xml" value="0.18671875" />
@@ -46,7 +53,12 @@
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/item_cart.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/item_doc.xml" value="0.20436083796494228" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/item_doctor.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/item_document.xml" value="0.20436083796494228" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/item_hospital.xml" value="0.20436083796494228" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/item_insurance.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/item_insurance_cart.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/item_lab_cart.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/item_lab_tests.xml" value="0.20436083796494228" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/item_medicine.xml" value="0.20436083796494228" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/item_pharmacy.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Demo/app/src/main/res/layout/item_reminder.xml" value="0.20521590423257802" />

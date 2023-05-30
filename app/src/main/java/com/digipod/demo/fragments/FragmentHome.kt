@@ -45,8 +45,24 @@ class FragmentHome : Fragment() {
             val intent=Intent(context, AppointmentActivity::class.java)
             startActivity(intent)
         }
+        binding.ivSelf.setOnClickListener {
+            val intent=Intent(context, SelfCheckActivity::class.java)
+            startActivity(intent)
+        }
+        binding.ivUpload.setOnClickListener {
+            val intent=Intent(context, UploadActivity::class.java)
+            startActivity(intent)
+        }
+        binding.cvAtHomeLabTest.setOnClickListener {
+            val intent=Intent(context, LabTestActivity::class.java)
+            startActivity(intent)
+        }
         binding.cvOrderMedicine.setOnClickListener {
             val intent=Intent(context, MedicineActivity::class.java)
+            startActivity(intent)
+        }
+        binding.cvInsurance.setOnClickListener {
+            val intent=Intent(context, InsuranceActivity::class.java)
             startActivity(intent)
         }
         binding.cdHospitals.setOnClickListener {

@@ -47,24 +47,44 @@ class DoctorActivity : AppCompatActivity() {
                         1200.0f
                     ),
                     DoctorModel(
-                        R.drawable.sh1,
+                        R.drawable.doc2,
                         "Lucknow",
-                        "Prabhakar Kumar",
-                        "MBBS(Intern)",
-                        "Dermatologist",
-                        "Hindi,English",
-                        "1.5 years experience",
-                        850.0f
-                    ),
-                    DoctorModel(
-                        R.drawable.sh2,
-                        "Lucknow",
-                        "Nupur Dev",
+                        "Rudrendra Bahadur",
                         "MBBS,DNB(General Medicine)",
-                        "Dermatologist",
+                        "General Physician",
                         "English",
                         "10 years experience",
-                        900.0f
+                        1000.0f
+                    ),
+                    DoctorModel(
+                        R.drawable.dr12,
+                        "Lucknow",
+                        "Ayushman Abdali",
+                        "MBBS,DNB(General Medicine)",
+                        "General Physician",
+                        "English",
+                        "10 years experience",
+                        500.0f
+                    ),
+                    DoctorModel(
+                        R.drawable.dr9,
+                        "Lucknow",
+                        "K.P Singh",
+                        "MBBS,DNB(General Medicine)",
+                        "General Physician",
+                        "English",
+                        "18 years experience",
+                        1100.0f
+                    ),
+                    DoctorModel(
+                        R.drawable.dr3,
+                        "Lucknow",
+                        "Ashlesh Pal",
+                        "MBBS,DNB(General Medicine)",
+                        "General Physiciant",
+                        "English",
+                        "5 years experience",
+                        700.0f
                     )
                 )
 
@@ -90,6 +110,46 @@ class DoctorActivity : AppCompatActivity() {
                         "English",
                         "10 years experience",
                         900.0f
+                    ),
+                    DoctorModel(
+                        R.drawable.doc2,
+                        "Lucknow",
+                        "Rudrendra Bahadur",
+                        "MBBS,DNB(General Medicine)",
+                        "Dermatologist",
+                        "English",
+                        "10 years experience",
+                        1000.0f
+                    ),
+                    DoctorModel(
+                        R.drawable.dr12,
+                        "Lucknow",
+                        "Ayushman Abdali",
+                        "MBBS,DNB(General Medicine)",
+                        "Dermatologist",
+                        "English",
+                        "10 years experience",
+                        500.0f
+                    ),
+                    DoctorModel(
+                        R.drawable.dr9,
+                        "Lucknow",
+                        "K.P Singh",
+                        "MBBS,DNB(General Medicine)",
+                        "Dermatologist",
+                        "English",
+                        "18 years experience",
+                        1100.0f
+                    ),
+                    DoctorModel(
+                        R.drawable.dr3,
+                        "Lucknow",
+                        "Ashlesh Pal",
+                        "MBBS,DNB(General Medicine)",
+                        "Dermatologist",
+                        "English",
+                        "5 years experience",
+                        700.0f
                     )
                 )
             }
@@ -114,7 +174,50 @@ class DoctorActivity : AppCompatActivity() {
                         "English",
                         "4 years experience",
                         1000.0f
+                    ),
+                    DoctorModel(
+                        R.drawable.doc2,
+                        "Lucknow",
+                        "Rudrendra Bahadur",
+                        "MBBS,DNB(General Medicine)",
+                        "Gynecologist",
+                        "English",
+                        "10 years experience",
+                        1000.0f
+                    ),
+                    DoctorModel(
+                        R.drawable.dr6,
+                        "Lucknow",
+                        "Aditi Rao",
+                        "MBBS,DNB(General Medicine)",
+                        "Gynecologist",
+                        "English",
+                        "10 years experience",
+                        500.0f
+                    ),
+                    DoctorModel(
+                        R.drawable.dr11,
+                        "Lucknow",
+                        "K.P Singh",
+                        "MBBS,DNB(General Medicine)",
+                        "Gynecologist",
+                        "English",
+                        "18 years experience",
+                        1100.0f
+                    ),
+                    DoctorModel(
+                        R.drawable.dr10,
+                        "Lucknow",
+                        "Ashlesha Pal",
+                        "MBBS,DNB(General Medicine)",
+                        "Gynecologist",
+                        "English",
+                        "5 years experience",
+                        700.0f
                     )
+
+
+
 
                 )
             }

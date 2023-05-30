@@ -120,6 +120,7 @@ class CheckoutActivity : AppCompatActivity() {
                         val uid = Firebase.auth.currentUser?.uid
                         val db = Firebase.firestore
                         uid?.let { db.collection("carts").document(it).delete() }
+                        uid?.let { db.collection("labCarts").document(it).delete() }
                     }
                 }
 //                showAlert("Payment completed successfully")
