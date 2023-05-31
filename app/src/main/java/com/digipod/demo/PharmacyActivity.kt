@@ -1,9 +1,12 @@
 package com.digipod.demo
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.digipod.demo.fragments.FragmentHome
+import kotlinx.android.synthetic.main.activity_appointment.*
 
 class PharmacyActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
@@ -16,6 +19,10 @@ class PharmacyActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         pharmAdapter = PharmacyAdapter(pharmList)
         recyclerView.adapter = pharmAdapter
+        btnBack.setOnClickListener {
+            val intent = Intent(this, FragmentHome::class.java)
+            startActivity(intent)
+        }
     buildPharmacyList()
     }
     private fun buildPharmacyList(){

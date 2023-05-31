@@ -17,10 +17,12 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.digipod.demo.fragments.FragmentHome
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
+import kotlinx.android.synthetic.main.activity_appointment.*
 import java.util.*
 
 class UploadActivity : AppCompatActivity() {
@@ -52,6 +54,10 @@ class UploadActivity : AppCompatActivity() {
         selectFileButton = findViewById(R.id.select_file_button)
         uploadButton = findViewById(R.id.upload_button)
         documentRecyclerView = findViewById(R.id.document_recycler_view)
+        btnBack.setOnClickListener {
+            val intent = Intent(this, FragmentHome::class.java)
+            startActivity(intent)
+        }
 
         documentAdapter = DocumentAdapter(getDocumentListFromUris(selectedDocuments) as MutableList<Document>)
         documentRecyclerView.apply {

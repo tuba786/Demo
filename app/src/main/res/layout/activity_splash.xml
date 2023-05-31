@@ -7,6 +7,7 @@
     tools:context=".SplashActivity">
 
     <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/ab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -27,12 +28,10 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="201dp"
+        android:layout_below="@+id/ab"
         android:layout_marginTop="621dp"
-        android:layout_marginEnd="210dp"
-        android:layout_marginBottom="46dp"
         android:textColor="#F4F3F6"
-        android:textSize="48sp"
+        android:textSize="38sp"
         android:textStyle="bold" />
 
 

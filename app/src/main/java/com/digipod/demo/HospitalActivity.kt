@@ -1,9 +1,12 @@
 package com.digipod.demo
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.digipod.demo.fragments.FragmentHome
+import kotlinx.android.synthetic.main.activity_appointment.*
 
 class HospitalActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
@@ -18,6 +21,10 @@ class HospitalActivity : AppCompatActivity() {
         hospitalAdapter = HospitalAdapter(hospitalList)
         recyclerView.adapter = hospitalAdapter
         buildHospitalList()
+        btnBack.setOnClickListener {
+            val intent = Intent(this, FragmentHome::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun buildHospitalList() {

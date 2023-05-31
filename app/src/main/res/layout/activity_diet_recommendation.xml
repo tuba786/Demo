@@ -5,9 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg"
     android:backgroundTint="#9FA8DA"
     tools:context=".DietRecommendation">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto"
+            android:text="Back"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -16,6 +37,7 @@
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
+            android:padding="20dp"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
@@ -31,7 +53,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto"
                         android:text="Get a meal plan based on your BMI"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textSize="25sp"
                         android:textStyle="bold" />
 
@@ -294,8 +316,8 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto"
                         android:text="Suggested Video"
-                        android:textColor="@color/white"
-                        android:textSize="30sp"
+                        android:textColor="#673AB7"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <View
@@ -304,7 +326,7 @@
                         android:layout_gravity="center"
                         android:layout_marginStart="18dp"
                         android:layout_marginLeft="18dp"
-                        android:background="@color/white" />
+                        android:background="#673AB7" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -336,8 +358,8 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto"
                         android:text="Some Related Articles"
-                        android:textColor="@color/white"
-                        android:textSize="30sp"
+                        android:textColor="#673AB7"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <View
@@ -346,7 +368,7 @@
                         android:layout_gravity="center"
                         android:layout_marginStart="18dp"
                         android:layout_marginLeft="18dp"
-                        android:background="@color/white" />
+                        android:background="#673AB7" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout

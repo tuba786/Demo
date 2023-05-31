@@ -4,13 +4,20 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.digipod.demo.fragments.FragmentHome
+import kotlinx.android.synthetic.main.activity_appointment.*
 import kotlinx.android.synthetic.main.activity_self_check.*
+import kotlinx.android.synthetic.main.activity_self_check.btnBack
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class SelfCheckActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_self_check)
+        btnBack.setOnClickListener {
+            val intent = Intent(this, FragmentHome::class.java)
+            startActivity(intent)
+        }
         vide1.setOnClickListener {
             openVideo("https://youtu.be/XKtTymNkcj0")
         }

@@ -69,6 +69,7 @@ class MedicineAdapter( private val onItemClickListener: OnItemClickListener,
                     auth.currentUser!!.uid,
                     MedicineItem(medicine, 1, medPrice),
                     auth.currentUser!!.phoneNumber!!
+
                 )
                 db.collection("carts")
                     .document(auth.currentUser!!.uid)

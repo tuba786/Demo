@@ -7,7 +7,10 @@ import android.widget.Button
 import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.digipod.demo.fragments.FragmentHome
+import kotlinx.android.synthetic.main.activity_appointment.*
 import kotlinx.android.synthetic.main.activity_doctor.*
+import kotlinx.android.synthetic.main.activity_doctor.btnBack
 
 class DoctorListActivity : AppCompatActivity() {
     private lateinit var recyclerViewDoc: RecyclerView
@@ -26,6 +29,10 @@ class DoctorListActivity : AppCompatActivity() {
         docAdapter.submitList(docList)
         recyclerViewDoc.adapter = docAdapter
         val btn = findViewById<Button>(R.id.btnPay)
+        btnBack.setOnClickListener {
+            val intent = Intent(this, InstantConsultation::class.java)
+            startActivity(intent)
+        }
         btn.setOnClickListener {
             Intent(this, CheckoutActivity::class.java).also {
                 it.putExtra("amount", 240.00f)

@@ -1,5 +1,6 @@
 package com.digipod.demo
 
+import android.content.Intent
 import android.media.session.MediaController
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +11,10 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.digipod.demo.fragments.FragmentHome
+import kotlinx.android.synthetic.main.activity_appointment.*
 import kotlinx.android.synthetic.main.activity_diet_recommendation.*
+import kotlinx.android.synthetic.main.activity_diet_recommendation.btnBack
 import retrofit2.http.Url
 
 class DietRecommendation : AppCompatActivity() {
@@ -34,6 +38,10 @@ class DietRecommendation : AppCompatActivity() {
         recyclerView.adapter = videoAdapter
         articleRecyclerView = findViewById(R.id.articleRecyclerView)
         articleRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        btnBack.setOnClickListener {
+            val intent = Intent(this, FragmentHome::class.java)
+            startActivity(intent)
+        }
 
 
 

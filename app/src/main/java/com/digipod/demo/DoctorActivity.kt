@@ -1,9 +1,12 @@
 package com.digipod.demo
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.digipod.demo.fragments.FragmentHome
+import kotlinx.android.synthetic.main.activity_appointment.*
 
 
 class DoctorActivity : AppCompatActivity() {
@@ -15,6 +18,10 @@ class DoctorActivity : AppCompatActivity() {
         recyclerViewDoctor = findViewById(R.id.recyclerViewDoctor)
         recyclerViewDoctor.layoutManager = LinearLayoutManager(this)
         doctorAdapter = DoctorAdapter()
+        btnBack.setOnClickListener {
+            val intent = Intent(this, AppointmentActivity::class.java)
+            startActivity(intent)
+        }
 
         val category = intent.getStringExtra("category")
         val doctorList = getDoctorList(category)

@@ -3,6 +3,7 @@ package com.digipod.demo
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.digipod.demo.fragments.FragmentHome
 import kotlinx.android.synthetic.main.activity_appointment.*
 
 
@@ -10,10 +11,11 @@ class AppointmentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_appointment)
-        cdGenPhy.setOnClickListener {
-            startDoctorActivity("General Physician")
+        btnBack.setOnClickListener {
+            val intent = Intent(this, FragmentHome::class.java)
+            startActivity(intent)
         }
-        cdCough.setOnClickListener {
+        cdGenPhy.setOnClickListener {
             startDoctorActivity("General Physician")
         }
         cdSkin.setOnClickListener {

@@ -36,7 +36,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@id/ivMenuBarIcon"
-                android:text="WELCOME!"
+                android:text="Welcome"
                 android:textColor="@color/black"
                 android:textSize="10sp" />
 
@@ -47,18 +47,10 @@
                 android:layout_below="@+id/tvYourLocation"
                 android:layout_marginHorizontal="10dp"
                 android:layout_toRightOf="@id/ivMenuBarIcon"
-                android:text="Name placeholder"
+                android:text="To CliniNet!"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
-            <ImageView
-                android:id="@+id/wallet_btn"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/wallet_icon_nav" />
 
         </RelativeLayout>
 
@@ -361,7 +353,7 @@
                         android:layout_gravity="bottom">
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/cvAmbulanceTracking"
+                            android:id="@+id/cdDiet"
                             android:layout_width="match_parent"
                             android:layout_height="120dp"
                             android:backgroundTint="@color/purple_200"
@@ -375,7 +367,7 @@
                                 android:layout_gravity="bottom"
                                 android:background="@color/white"
                                 android:gravity="center_horizontal|center_vertical"
-                                android:text="Ambulance\nTracking"
+                                android:text="Diet\nPlans"
                                 android:textAlignment="center"
                                 android:textColor="@color/black"
                                 android:textSize="15sp"
@@ -390,7 +382,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:layout_marginBottom="70dp"
-                        android:src="@drawable/ambulance" />
+                        android:src="@drawable/diet" />
 
                 </FrameLayout>
 
@@ -436,8 +428,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:background="#673AB7"
+                    android:orientation="horizontal"
                     android:padding="10dp">
 
                     <androidx.cardview.widget.CardView
@@ -542,156 +534,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
                 android:orientation="horizontal"
                 android:padding="10dp"
-                android:weightSum="3">
-
-                <FrameLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_weight="1">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center">
-
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/cdDiet"
-                            android:layout_width="85dp"
-                            android:layout_height="85dp"
-                            android:layout_gravity="center"
-                            android:backgroundTint="@color/purple_200"
-                            app:cardCornerRadius="100dp">
-
-                            <ImageView
-                                android:id="@+id/ivDiet"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                android:layout_gravity="center"
-                                android:src="@drawable/meal" />
-
-                        </androidx.cardview.widget.CardView>
-
-                        <TextView
-                            android:id="@+id/tvDiet"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/cdDiet"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="5dp"
-                            android:gravity="center_horizontal|center_vertical"
-                            android:text="Diet\nPlans"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                    </RelativeLayout>
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_weight="1">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom">
-
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/cdMental"
-                            android:layout_width="85dp"
-                            android:layout_height="85dp"
-
-                            android:backgroundTint="@color/purple_200"
-                            app:cardCornerRadius="100dp">
-
-                            <ImageView
-                                android:id="@+id/ivMental"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                android:layout_gravity="center"
-                                android:src="@drawable/skin" />
-
-                        </androidx.cardview.widget.CardView>
-
-                        <TextView
-                            android:id="@+id/tvMental"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/cdMental"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="5dp"
-                            android:gravity="center_horizontal|center_vertical"
-                            android:text="Mental \nActivies"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                    </RelativeLayout>
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_weight="1">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom">
-
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/cdSelf"
-                            android:layout_width="85dp"
-                            android:layout_height="85dp"
-
-                            android:backgroundTint="@color/purple_200"
-                            app:cardCornerRadius="100dp">
-
-                            <ImageView
-                                android:id="@+id/ivSelf"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                android:layout_gravity="center"
-                                android:src="@drawable/iv_self" />
-
-                        </androidx.cardview.widget.CardView>
-
-                        <TextView
-                            android:id="@+id/tvSelf"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/cdSelf"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="5dp"
-                            android:text="Self \nCheckup"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                    </RelativeLayout>
-
-                </FrameLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                android:weightSum="3">
+                android:weightSum="2">
 
                 <FrameLayout
                     android:layout_width="0dp"
@@ -708,7 +554,6 @@
                             android:id="@+id/cdHospitals"
                             android:layout_width="85dp"
                             android:layout_height="85dp"
-
                             android:backgroundTint="@color/purple_200"
                             app:cardCornerRadius="100dp">
 
@@ -723,11 +568,14 @@
 
                         <TextView
                             android:id="@+id/tvHospitals"
-                            android:layout_width="wrap_content"
+                            android:layout_width="68dp"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/cdHospitals"
-                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="15dp"
                             android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
                             android:gravity="center_horizontal|center_vertical"
                             android:text="List of \nHospitals"
                             android:textAlignment="center"
@@ -772,10 +620,65 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/cdPharm"
-                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="8dp"
                             android:layout_marginTop="5dp"
                             android:gravity="center_horizontal|center_vertical"
                             android:text="List of \nPharmacies"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="40dp"
+                android:padding="10dp"
+                android:weightSum="2">
+
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cdSelf"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+
+                            android:backgroundTint="@color/purple_200"
+                            app:cardCornerRadius="100dp">
+
+                            <ImageView
+                                android:id="@+id/ivSelf"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/iv_self" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/tvSelf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cdSelf"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Self \nCheckup"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textSize="15sp"
@@ -818,7 +721,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/cdUpload"
-                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="8dp"
                             android:layout_marginTop="5dp"
                             android:gravity="center_horizontal|center_vertical"
                             android:text="Upload \nDocuments"
@@ -831,7 +734,10 @@
                     </RelativeLayout>
 
                 </FrameLayout>
+
+
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -873,9 +779,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="#673AB7"
                     android:orientation="horizontal"
-                    android:padding="10dp"
-                    android:background="#673AB7">
+                    android:padding="10dp">
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
@@ -962,31 +868,57 @@
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
             </HorizontalScrollView>
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="#673AB7">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto"
-                    android:text="About Us"
-                    android:textColor="@color/white"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto"
-                    android:text="Clininet is a comprehensive healthcare application designed to simplify healthcare management for users. It offers a range of features that allow users to register and authenticate securely, book doctor appointments, access detailed doctor profiles, order medications through an e-pharmacy platform, manage prescriptions, and receive timely notifications and reminders. By providing these features, Clininet aims to empower users, improve patient experience, and enhance healthcare outcomes. With Clininet, users can easily take control of their healthcare by managing appointments, medications, and overall well-being in a convenient and accessible manner."
-                    android:textColor="@color/white"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:text="About US"
+                        android:textColor="#673AB7"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1.5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="#673AB7" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Clininet is a comprehensive healthcare application designed to simplify healthcare management for users. It offers a range of features that allow users to register and authenticate securely, book doctor appointments, access detailed doctor profiles, order medications through an e-pharmacy platform, manage prescriptions, and receive timely notifications and reminders. By providing these features, Clininet aims to empower users, improve patient experience, and enhance healthcare outcomes. With Clininet, users can easily take control of their healthcare by managing appointments, medications, and overall well-being in a convenient and accessible manner."
+                        android:textColor="#673AB7"
+                        android:textSize="14sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

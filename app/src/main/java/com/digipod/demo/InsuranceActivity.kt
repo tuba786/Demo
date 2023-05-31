@@ -7,11 +7,13 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.digipod.demo.fragments.FragmentHome
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_appointment.*
 
 class InsuranceActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
@@ -29,6 +31,10 @@ class InsuranceActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.insuranceRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
         btn = findViewById<ImageView>(R.id.goToCart)
+        btnBack.setOnClickListener {
+            val intent = Intent(this, FragmentHome::class.java)
+            startActivity(intent)
+        }
 
 
         getInsurance()

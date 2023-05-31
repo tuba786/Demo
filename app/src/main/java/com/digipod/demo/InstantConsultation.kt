@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.digipod.demo.databinding.ActivityInstantConsultationBinding
+import com.digipod.demo.fragments.FragmentHome
 import io.agora.rtc2.IRtcEngineEventHandler
 import io.agora.rtc2.RtcEngine
 import io.agora.rtc2.video.VideoCanvas
@@ -32,6 +33,25 @@ class InstantConsultation : AppCompatActivity() {
         }
         womenHealth.setOnClickListener {
             startDoctorListActivity("Women's Health")
+        }
+        cough.setOnClickListener {
+            startDoctorListActivity("General Physician")
+        }
+        fever.setOnClickListener {
+            startDoctorListActivity("General Physician")
+        }
+        stomach.setOnClickListener {
+            startDoctorListActivity("General Physician")
+        }
+        head.setOnClickListener {
+            startDoctorListActivity("General Physician")
+        }
+        cWeight.setOnClickListener {
+            startDoctorListActivity("General Physician")
+        }
+        buttonBack.setOnClickListener {
+            val intent = Intent(this, FragmentHome::class.java)
+            startActivity(intent)
         }
 
     }
